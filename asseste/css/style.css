@@ -133,6 +133,9 @@ p {
   left: 0;
   z-index: 9999;
 }
+.navbar .container {
+  position: relative;
+}
 .navbar-nav .nav-item .nav-link {
   color: #000;
   text-align: center;
@@ -161,13 +164,42 @@ p {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-nav .bx-search {
-  font-size: 25px;
-  color: var(--black-1);
-  padding-left: 10px;
-  cursor: pointer;
-  vertical-align: middle;
+/* Search Bar Start */
+
+.search_btn, .close_btn {
+  width: 40px !important;
+  height: 40px !important;
+  font-size: 25px !important;
+  color: #000 !important;
+  border: none !important;
+  background-color: #f8f9fa !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease;
+
 }
+.search_box {
+  flex-grow: 1;
+  height: 40px !important;
+  padding: 15px !important;
+  border-radius: 25px;
+  outline: none;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(100% + 15px);
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+.active.search{
+  opacity: 1;
+  visibility: visible;
+}
+/* Search Bar End */
 .navbar .navbar-toggler {
   border: none !important;
   outline: none !important;
@@ -570,6 +602,23 @@ nav .bx-search {
   .card-group p {
     font-size: 12px;
   }
+  .contact_row {
+    padding-left: 0 !important;
+  }
+  .contact_box {
+    width: 100%;
+    display: block !important;
+  }
+  .box_1 {
+    padding: 0 !important;
+
+  }
+  .contact_title {
+    margin-top: 0!important;
+  }
+  /* .contact_img{
+    width: 100%;
+  } */
   .ft-dese {
     text-align: center;
     padding-inline: 90px;
